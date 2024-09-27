@@ -27,18 +27,17 @@ visitors <- read_csv("data/UK-visitor-numbers.csv")
 _How many tourist attractions are there in the data set?_
 
 
-visitors %>% count(region, attraction, sort=TRUE)
+visitors %>% count()
 
 
 ### Exercise a.
 
 _Create a frequency table of the number of tourist attractions in the data set by `region`._
 
-```{r Ex_a}
-# Delete the comment '#' symbol at the start of the next line and complete the code. 
+ 
 
-#visitors %>% count(_____)
-```
+visitors %>% count(region, attraction, sort=TRUE)
+
 
 ### Exercise b.
 
